@@ -78,7 +78,7 @@
     align-items: center;
     justify-content: space-between;
     margin-right: 3%;
-    width: 5%;
+    width: 8%;
     height: 325px;
     text-align: right;
   }
@@ -88,7 +88,7 @@
     flex-direction: column;
     gap: 20px;
     border-left: solid 15px black;
-    height: 250px;
+    height: 255px;
     width: 85%;
     margin-left: 10px;
     padding: 0 20px 20px 20px ;
@@ -97,15 +97,6 @@
     line-height: 2;
     margin-bottom:auto;
     font-size: 15px;
-  }
-  
-  .section-side-header {
-    display: flex;
-    flex-direction:row;
-    word-wrap: break-word;
-    text-align: right;
-    font-size: 50px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   main {
@@ -129,7 +120,7 @@
     color: #fff;
     margin-top: auto;
   }
-  
+
   .products {
     background-color:white;
     padding: 5px;
@@ -152,12 +143,18 @@
     overflow: hidden; 
   }
 
-  a {
+  section a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
   }
   
+  a[href$=".gov"]:after {
+    content: " 📝";
+    color: red;
+    margin-left: 5px;
+  }
+
   .card header {
     padding: 20px;
   }
