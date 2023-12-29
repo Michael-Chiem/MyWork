@@ -97,6 +97,11 @@ header nav li::before {
   line-height: 2;
   margin-bottom: auto;
   font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.layout:hover {
+  background-color: black;
 }
 
 main {
